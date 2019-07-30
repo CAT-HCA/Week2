@@ -1,6 +1,5 @@
 // Description: This function will parse a product code
 //Author: Corinne Trudeau
-
 "use strict";
 
 let obj1 = {

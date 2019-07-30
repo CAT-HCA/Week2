@@ -3,6 +3,13 @@
 
 "use strict";
 
+/*
+*This function will extract supplier code, product number and size from a string 
+* @param code (string) - the full part code
+* @return supplier (string) - the supplier code (all digits before the colon)
+* @return productNumber (string) - the product number (found between the colon and the dash)
+* @return size (string) - the product size (found after the dash)
+*/
 function parsePartCode(code){
     let pos = code.indexOf(":");
     let supplier = code.substring(0, pos);
@@ -17,7 +24,10 @@ function parsePartCode(code){
     return obj;
 }
 
+//calling the function
 var partCode1 = "XYZ:1234-L";
 var part1 = parsePartCode(partCode1);
+
+//displaying the output
 return console.log("The size " + part1.size + " part " + part1.productNumber + " is supplied by " + part1.supplier);
 

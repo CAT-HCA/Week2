@@ -4,7 +4,8 @@
 "use strict";
 
 /*
-*This function will extract supplier code, product number and size from a string 
+*This function will extract supplier code, product number and 
+*size from a string and display in the console
 * @param contact (string) - the users full address
 * @return name (string) - name
 * @return address (string) - house number and street name

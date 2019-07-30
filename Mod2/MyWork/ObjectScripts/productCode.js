@@ -6,9 +6,11 @@
 /*
 *This function will extract supplier code, product number and size from a string 
 * @param code (string) - the full part code
-* @return supplier (string) - the supplier code (all digits before the colon)
-* @return productNumber (string) - the product number (found between the colon and the dash)
-* @return size (string) - the product size (found after the dash)
+* @param supplier (string) - the supplier code (all digits before the colon)
+* @param productNumber (string) - the product number (found between the colon and the dash)
+* @param size (string) - the product size (found after the dash)
+* @return obj (object) - the object containing all parameters
+*
 */
 function parsePartCode(code){
     let pos = code.indexOf(":");

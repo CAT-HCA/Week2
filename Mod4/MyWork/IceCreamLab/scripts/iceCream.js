@@ -32,6 +32,11 @@ window.onload = function ()
     }
 }
 
+/*
+* This function will determine the cost of the ice cream without toppings
+* @param numScoops (number) - number of scoops requested (1-3)
+* @return iceCreamCost (number) - returns the cost of the ice cream
+*/
 function getIceCreamCost(numScoops)
 {
     let iceCreamCost = 0;
@@ -53,6 +58,13 @@ function getIceCreamCost(numScoops)
     return iceCreamCost;
 }
 
+/*
+* This function will determine the cost of just the toppings, if any are selected
+* @param hotFudge (boolean) - value of hotFudge checkbox
+* @param sprinkles (boolean) - value of sprinkles checkbox
+* @param whip (boolean) - value of whip checkbox
+* @return toppingCost (number) - returns the cost of the toppings
+*/
 function getToppingCost(hotFudge, sprinkles, whip)
 {
 
